@@ -1,38 +1,39 @@
 {
 	"info": {
 		"_postman_id": "4a766d82-08e5-4a03-a4a2-02216de0eb67",
-		"name": "Heroku_todoList",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"name": "Heroku_week2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19763572"
 	},
 	"item": [
 		{
-			"name": "取得所有待辦",
+			"name": "取得所有貼文",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://enigmatic-sands-83230.herokuapp.com/todos",
+					"raw": "https://frozen-escarpment-35983.herokuapp.com/posts",
 					"protocol": "https",
 					"host": [
-						"enigmatic-sands-83230",
+						"frozen-escarpment-35983",
 						"herokuapp",
 						"com"
 					],
 					"path": [
-						"todos"
+						"posts"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "新增待辦",
+			"name": "新增貼文",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"新增待辦3\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Peter1\",\r\n    \"content\": \"一直下雨好煩1\",\r\n    \"tags\": \"心情1\",\r\n    \"type\": \"group\",\r\n    \"likes\": 300\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -40,56 +41,56 @@
 					}
 				},
 				"url": {
-					"raw": "https://enigmatic-sands-83230.herokuapp.com/todos",
+					"raw": "https://frozen-escarpment-35983.herokuapp.com/posts",
 					"protocol": "https",
 					"host": [
-						"enigmatic-sands-83230",
+						"frozen-escarpment-35983",
 						"herokuapp",
 						"com"
 					],
 					"path": [
-						"todos"
+						"posts"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "刪除所有待辦",
+			"name": "刪除所有貼文",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://enigmatic-sands-83230.herokuapp.com/todos",
+					"raw": "https://frozen-escarpment-35983.herokuapp.com/posts",
 					"protocol": "https",
 					"host": [
-						"enigmatic-sands-83230",
+						"frozen-escarpment-35983",
 						"herokuapp",
 						"com"
 					],
 					"path": [
-						"todos"
+						"posts"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "刪除單筆待辦",
+			"name": "刪除單筆貼文",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://enigmatic-sands-83230.herokuapp.com/todos/",
+					"raw": "https://frozen-escarpment-35983.herokuapp.com/posts/628dbe80e1fbb3956e2b48ed",
 					"protocol": "https",
 					"host": [
-						"enigmatic-sands-83230",
+						"frozen-escarpment-35983",
 						"herokuapp",
 						"com"
 					],
 					"path": [
-						"todos",
-						""
+						"posts",
+						"628dbe80e1fbb3956e2b48ed"
 					]
 				}
 			},
@@ -102,7 +103,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"修改內容1\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Peter2\",\r\n    \"content\": \"修改貼文資料\",\r\n    \"tags\": \"心情\",\r\n    \"type\": \"group\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -110,16 +111,16 @@
 					}
 				},
 				"url": {
-					"raw": "https://enigmatic-sands-83230.herokuapp.com/todos/",
+					"raw": "https://frozen-escarpment-35983.herokuapp.com/posts/628dbe7ee1fbb3956e2b48eb",
 					"protocol": "https",
 					"host": [
-						"enigmatic-sands-83230",
+						"frozen-escarpment-35983",
 						"herokuapp",
 						"com"
 					],
 					"path": [
-						"todos",
-						""
+						"posts",
+						"628dbe7ee1fbb3956e2b48eb"
 					]
 				}
 			},

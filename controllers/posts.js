@@ -14,7 +14,8 @@ const posts = {
                         name: data.name,
                         content: data.content,
                         tags: data.tags,
-                        type: data.type
+                        type: data.type,
+                        likes: data.likes
                     }
                 );
                 serviceHandle.handleSucess(res, newPost)
